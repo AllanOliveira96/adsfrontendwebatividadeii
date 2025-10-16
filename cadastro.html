@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Instituição Terra Renovada</title>
+    <link rel="shortcut icon" href="imagens/favicon/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="imagens/logonovasemtexto300.png" alt="Logo Fundação Terra Renovada">
+        <h1>Terra Renovada - A natureza renovada pelas nossas mãos.</h1>
+        <h2>Seja um Voluntário</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main>
+        <section>
+            <h2>Formulário de cadastro</h2>
+            <img src="imagens/imagenscadastro/cadastro300.png" alt="Formulário de cadastro">
+            <p>Preencha o formulário para se candidatar a voluntário</p>
+            <p><i>Todos os itens são obrigatórios.</i></p>
+            <form>
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <!--Nome completo-->
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <br>
+                    <!--Email-->
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="e-mail" required>
+                    <br>
+                    <!--CPF-->
+                    <label for="CPF">CPF:</label>
+                    <input type="text" id="CPF" name="CPF" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
+                            placeholder="000.000.000-00" title="Formato: 000.000.000-00" required>
+                    <br>
+                    <!--Data de nascimento-->
+                    <label for="datadenascimento">Data de nascimento:</label>
+                    <input type="text" id="datadenascimento" name="Data de nascimento:" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}"
+                            placeholder="00/00/0000" title="00-00-0000" required>
+                    <br>
+                    <!--Endereço-->
+                    <label for="endereço">Endereço:</label>
+                    <input type="text" id="endereço" name="endereço" required>
+                    <br>       
+                    <!--Telefone-->
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" id="tel" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}"
+                            placeholder="(00)00000-0000" title="Formato: (00)00000-0000" required>
+                    <br>
+                    <!--Cidade/Estado-->
+                    <label for="cidade/estado">Cidade/Estado:</label>
+                    <input type="text" id="cidade/estado" name="cidade/estado" required>
+                    <br>
+                    <!--CEP-->                    
+                    <label for="CEP">CEP:</label>
+                    <input type="text" id="CEP" pattern="[0-9]{5}-[0-9]{3}"
+                            placeholder="00000-000" title="CEP:00000-000" required>       
+                </fieldset>
+                <button type="submit">Enviar cadastro</button>
+            </form>
+        </section>
+    </main>
+    <footer>&copy;2025 Instituição Terra Renovada</footer>               
+</body>
+</html>
